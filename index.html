@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            color: #666;
+        }
+
+        .configure-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .configure-button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Choose anything you wanna do under the text.</h1>
+    <button class="configure-button" onclick="goToMakeConfig()">Configure Harvest Script</button>
+
+    <!-- Add a new button for harvest.lua -->
+    <button class="configure-button" onclick="goToHarvestScript()">View harvest.lua</button>
+
+    <!-- Add a new button for Rota Configuration -->
+    <button class="configure-button" onclick="goToRotaConfig()">Rota Configuration</button>
+
+    <script>
+        function goToMakeConfig() {
+            window.location.href = 'makeConfig.html';
+        }
+
+        function goToHarvestScript() {
+            // Replace 'USERNAME' and 'REPO' with the appropriate GitHub username and repository name
+            window.location.href = 'https://github.com/BarisSenel/luciferScripts/blob/main/harvest.lua';
+        }
+
+        // Function to go to Rota Configuration
+        function goToRotaConfig() {
+            window.location.href = 'https://barissenel.github.io/rotaConfig.html';
+        }
+    </script>
+</body>
+</html>
